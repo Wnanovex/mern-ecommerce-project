@@ -1,0 +1,18 @@
+body{
+    background-color: #222831;
+}
+body::before{
+    content: '';
+    display: block;
+    height: 55px;
+}
+
+/* hover in home -> header component page of slider */
+.text-slider{
+    opacity: 0;
+    transition: 0.5s;
+    
+}
+.slider:hover .text-slider{
+    opacity: 1;
+}

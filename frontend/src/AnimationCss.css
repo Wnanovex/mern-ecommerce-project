@@ -1,0 +1,53 @@
+/*  animation of button in home page named Shop */
+.btn-home-shop {
+    padding: 0.5em 1em;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    cursor: pointer;
+    color: #B60071;
+    transition: all 1000ms;
+    font-size: 15px;
+    position: relative;
+    overflow: hidden;
+    outline: 2px solid #FF0080;
+}
+.btn-home-shop:hover {
+    color: #ffffff;
+    transform: scale(1.1);
+    outline: 2px solid #FF0080;
+    box-shadow: 4px 5px 17px -4px #268391;
+}
+.btn-home-shop::before {
+    content: "";
+    position: absolute;
+    left: -50px;
+    top: 0;
+    width: 0;
+    height: 100%;
+    background-color: #B60071;
+    transform: skewX(45deg);
+    z-index: -1;
+    transition: width 1000ms;
+}
+.btn-home-shop:hover::before {
+    width: 250%;
+}
+/* animation of card product  */
+.card-product:hover{
+    box-shadow: 1px 1px 10px rgb(93,188,252);
+    cursor: pointer;
+    transform: scale(1.1);
+    transform: rotate(1deg);
+    transition: 0.5s;
+}
+
+/* animation of card product of shop page  */
+.card-product-shop:hover{
+    box-shadow: 1px 1px 10px rgb(93,188,252);
+    cursor: pointer;
+    transform: scale(1.05);
+    transition: 0.5s;
+}
